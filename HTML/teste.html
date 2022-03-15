@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function realiza_calculo()
+{
+    var campo1 = document.getElementById('valor1').value;
+    var campo2 = document.getElementById('valor2').value;
+
+    var maior = (parseFloat(campo1) > parseFloat(campo2)? campo1 : campo2);
+    var menor = (parseFloat(campo1) < parseFloat(campo2)? campo1 : campo2);
+
+    var result = (menor/maior)*100;
+
+    document.getElementById('resultado').value = result;
+}
+
+</script>
+</head>
+
+<body>
+
+<form>
+Valor 1: <input type="text" id="valor1"><br>
+Valor 2: <input type="text" id="valor2"><br>
+<br>
+<input type="button" id="calcular" value="calcular" onclick="realiza_calculo();"><br>
+Seu resultado: <input type="text" id="resultado">
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir='ltr'>
+<head>
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<tittle>Calculadora</tittle>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <br>
+    <br>
+    <label>valor X</label> 
+    <br>
+    <input type="number" id="valorx">
+    <br>
+    <br>
+    <label>valor Y</label> 
+    <br>
+    <input type="number" id="valory">
+
+    <br>
+    <br>
+    <button type='button' onclick="calcular()">Calcular</button>
+    <br>
+    <label>Resultado</label>
+    <br>
+    <input type="number" id="resultado">
+    <script type="text/Javascript">
+        function calcular(){
+            valorx = document.getElementById('valorx').value
+            valory = document.getElementById('valory').value
+
+            resultado = parseFloat(valorx) + parseFloat(valory)
+
+            document.getElementById('resultado').value = resultado
+            alert('Cálculo realizado com sucesso')
+         }
+    </script>
+    
+ </body>
+ </html>
+ 

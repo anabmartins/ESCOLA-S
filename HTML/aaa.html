@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora simples</title>
+</head>
+
+<body>
+    <h2> calculadora simples</h2>
+    <label>Valor de X </label>
+    <input type='number' id='x' placeholder="valor X">
+    <br><br>
+    <label>Valor de Y </label>
+    <input type='number' id='y' placeholder="valor Y">
+
+    <br><br>
+    <button onclick="somar()">+</button>
+    <script>
+        const somar = function () {
+            let x = document.getElementById('x').value
+            let y = document.getElementById('y').value
+            z = parseFloat(x) + parseFloat(y)
+            document.getElementById('z').value = z
+        }
+    </script>
+    <br><br>
+    <label> resultado:</label>
+    <input type="number" id='z' readonly>
+</body>
+<br><br>
+</body>
+
+</html>
