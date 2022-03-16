@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <title>C° para F°</title>
+</head>
+
+<body>
+    <div id="temp"> </div>
+    <div id="tempF"></div>
+    <script>
+        window.onload = () => {
+            let xhr = new XMLHttpRequest()
+            xhr.open("GET",
+                "http://api.openweathermap.org/data/2.5/weather?id=3463237&units=metric&appid=3f09835c612b3a95db56f9b3a4cdd0b5"
+                )
+            xhr.onload = () => {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        let json = JSON.parse(xhr.responseText)
+                        let tempC = json.main.temp.toFixed(0)
+                        document.getElementById("temp").innerHTML = tempC + " C em " + json.name
+                        document.getElementById("tempF").innerHTML = "em F é " + converter(tempC)
+                    } else {
+                        console.log(xhr.status)
+                    }
+                }
+            }
+            xhr.send()
+        }
+        const converter = (temp) => {
+            //(0 °C × 9/5) + 32 = 32 °F
+            return (temp * 9 / 5) + 32
+        }
+    </script>
+</body>
+
+</html>
