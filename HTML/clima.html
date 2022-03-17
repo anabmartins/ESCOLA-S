@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,15 +14,42 @@
 <body>
     <div id="temp"> </div>
     <div id="tempF"></div>
+
+    <label for="cities">Cidade</label>
+    <input type="text" name="cities" id="mycities" list="cities">
+    <datalist id="cities">
+        <option value="Florianópolis">
+        <option value="Curitiba">
+        <option value="Porto Alegre">
+        <option value="São Paulo">
+        <option value="Rio de Janeiro">
+
+    </datalist>
+
     <script>
-        window.onload = () => {
+        const idCidades = {
+            "Florianópolis": 3463237,
+            "Curitiba": 3464975,
+            "Porto Alegre": 3452925,
+            "São Paulo": 3448433,
+            "Rio de Janeiro": 3451190,
+        }
+        document.getElementById("mycities").addEventListener("keyup", (evt) => {
+            if (evt.keyCode === 13) {
+                let val = document.getElementById("mycities").value
+                document.getElementById("mycities").value = ""
+                getTemp(idCidades[val])
+            }
+        })
+        const getTemp = (cidade) => {
+            cidade = cidade || idCidades["Florianópolis"]
             let xhr = new XMLHttpRequest()
             xhr.open("GET",
-                "http://api.openweathermap.org/data/2.5/weather?id=3463237&units=metric&appid=3f09835c612b3a95db56f9b3a4cdd0b5"
-                )
+                "http://api.openweathermap.org/data/2.5/weather?id=" + cidade +
+                "&units=metric&appid=3f09835c612b3a95db56f9b3a4cdd0b5"
+            )
             xhr.onload = () => {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
+                if (xhr.readyState === 4 && xhr.status === 200) {
                         let json = JSON.parse(xhr.responseText)
                         let tempC = json.main.temp.toFixed(0)
                         document.getElementById("temp").innerHTML = tempC + " C em " + json.name
@@ -31,14 +58,16 @@
                         console.log(xhr.status)
                     }
                 }
+               xhr.send()
             }
-            xhr.send()
-        }
+
+        window.onload = getTemp()
         const converter = (temp) => {
             //(0 °C × 9/5) + 32 = 32 °F
             return (temp * 9 / 5) + 32
         }
     </script>
+
 </body>
 
 </html>
