@@ -1,19 +1,20 @@
 const pesquisarPreco = function(opcao){
+    let resultado = document.getElementById('resultado')
 switch(opcao){
     case 'uva':
-        console.log('Preço da uva: R$1,70')
-        alert('Preço da uva: R$1,70')
+        resultado.innerHTML = "Preço da uva é R$1,70"
         break
     case 'laranja':
-        console.log('Preço da laranja: R$2,50')
-        alert('Preço da laranja: R$2,50')
+        resultado.innerHTML = "Preço da laranja é R$2,50"
         break
     case 'maça':
-        console.log('Preço da maçã: R$3,09')
-        alert('Preço da maçã: R$3,09')
+        resultado.innerHTML = "Preço da maçã é R$3,09"
         break
+        case 'pera':
+            resultado.innerHTML = "Preço da pera é R$4,05"
+            break
     default:
-        console.log('Produto não existe')
-        break
+        resultado.innerHTML = "Resultado não existe"
+            break
     }
 }
