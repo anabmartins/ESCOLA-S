@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedência de Produtos</title>
+    <link rel="stylesheet" href="./case_prod.css">
+</head>
+<body>
+    <header>
+    <h2>Procedência dos produtos</h2>
+</header>
+<div class="container">
+    <h3>Lista de produtos</h3>
+    <div class="div-produtos">
+        <input type="radio" name="frutas" id="uva" onclick="pesquisarPreco('uva')">
+        <label>Uva</label>
+        <br><br>
+        <input type="radio" name="frutas" id="laranja" onclick="pesquisarPreco('laranja')">
+        <label>Laranja</label>
+        <br><br>
+        <input type="radio" name="frutas" id="maça" onclick="pesquisarPreco('maça')">
+        <label>Maçã</label>
+        <br><br>
+        <input type="radio" name="frutas" id="pera" onclick="pesquisarPreco('pera')">
+        <label>Pera</label>
+        <br><br>
+    </div>
+    <div class="div-resultado">
+        <label id="resultado">Preço</label>
+    </div>
+</div>
+
+<footer>
+    <ul>
+        <li>Lista de Produtos e procedência</li>
+        <li>Transparência e Segurança</li>
+    </ul>
+</footer>
+<script src="./case_prod.js"></script>
+
+</body>
+</html>
