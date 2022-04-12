@@ -28,3 +28,17 @@ footer {
     padding: 38px;
     margin-top: 16px;
 }
+
+.div-produtos {
+    border: 2px solid #e4a2a4;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+.div-resultado {
+    border: 2px solid #e4a2a4;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 8px;
+}
