@@ -5,48 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <style>
-        .valores {
-            text-decoration: underline;
-            font-family: monospace;
-            font-size: 20pt;
-        }
-
-        .valores::selection {
-            background-color: rgb(255, 185, 252);
-            color: white;
-        }
-    </style>
+    <title>Calculadora Média</title>
+    <link rel="stylesheet" href="./css/calculomedia.css">
 </head>
 
 <body>
-    <h1>calculadora</h1>
-    <label class="valores">Valor X</label>
+    <header>
+    <h2>Cálculo de média de notas</h2>
+    </header>
+    <div class="container"> 
+    <h3>Insira a nota dos alunos</h3>    
+    <label class="valores">Aluno 1</label>
     <br>
-    <input type="number" id="valorX">
-    <br>
-    <br>
-    <label class="valores">Valor Y</label>
-    <br>
-    <input type="number" id="valorY">
-    <br>
-    <br>
-    <label class="valores">Valor Z</label>
-    <br>
-    <input type="number" id="valorZ">
-    <br>
-    <button type="button" onclick="calcular()">calcular</button>
+    <input type="number" id="nota1">
     <br>
     <br>
-    <label class="valor2">Resultado</label>
+    <label class="valores">Aluno 2</label>
+    <br>
+    <input type="number" id="nota2">
+    <br>
+    <br>
+    <label class="valores">Aluno 3</label>
+    <br>
+    <input type="number" id="nota3">
+    <br>
+    <button type="button" id="botao" onclick="calcular()">Calcular</button>
+    <br>
+    <br>
+    <label class="valor2">Média</label>
     <br>
     <input type="number" id="resultado">
+</div>
+    <footer>
+        <ul>
+            <li>Calcule a média de notas dos alunos</li>
+            <li>Rápido e fácil</li>
+        </ul>
+    </footer>
     <script type="text/javascript">
         function calcular() {
-            valorx = document.getElementById('valorX').value
-            valory = document.getElementById('valorY').value
-            valorz = document.getElementById('valorZ').value
+            valorx = document.getElementById('nota1').value
+            valory = document.getElementById('nota2').value
+            valorz = document.getElementById('nota3').value
 
             resultado = (parseFloat(valorx) + parseFloat(valory) + parseFloat(valorz)) / 3
             document.getElementById('resultado').value = resultado
