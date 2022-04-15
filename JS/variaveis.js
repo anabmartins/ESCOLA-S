@@ -10,17 +10,17 @@ var comida3 = "uva";
 var comida4 = "arroz";
 var comida5 = "maçã";
 
-//Crie 4 variáveis, 2 com nome e 2 com sobrenome. 
-//Mostre ao usuário os nomes com seus sobrenomes;
+//Crie 4 variáveis, 2 com nome e 2 com sobrenome: 
 var nome1 = "Maria";
 var nome2 = "Cristina";
 var sobrenome1 = "Silva";
 var sobrenome2 = "Castro";
+
+////Mostre ao usuário os nomes com seus sobrenomes:
 console.log(nome1, sobrenome1);
 console.log(nome2, sobrenome2);
 
-//Crie 6 variáveis booleanas. 
-//Usando o padrão “is+verbo”
+//Crie 6 variáveis booleanas usando o padrão “is+verbo”:
 var isEntrar = true;
 var isLogar = false;
 var isOnline = true;
@@ -54,5 +54,8 @@ const divisao = n3 / n1;
 //Multiplique duas variáveis numéricas:
 const Multiplique = n5 * n2;
 
-//Mostre o resto da divisão inteira de um número;
-resto = n4 % n6;
+//Mostre o resto da divisão inteira de um número:
+num1 = 60
+num2 = 5
+resto = num1 % num2;
+console.log(resto)
