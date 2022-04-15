@@ -55,7 +55,7 @@ const divisao = n3 / n1;
 const Multiplique = n5 * n2;
 
 //Mostre o resto da divisão inteira de um número:
-num1 = 60
-num2 = 5
+num1 = Math.floor(78)
+num2 = Math.floor(5)
 resto = num1 % num2;
 console.log(resto)
