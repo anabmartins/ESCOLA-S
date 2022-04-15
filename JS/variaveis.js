@@ -1,5 +1,4 @@
 //Crie 3 variáveis com nomes de clientes:
-
 var cliente1 = "Jorge";
 var cliente2 = "Camila";
 var cliente3 = "Sara";
