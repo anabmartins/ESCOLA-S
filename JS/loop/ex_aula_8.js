@@ -1,11 +1,11 @@
-//Conte de 1 a 100 usando FOR, mostre ao usuário os números
+// 1. Conte de 1 a 100 usando FOR, mostre ao usuário os números
 //sendo incrementados.
  let n = 100
  for (let i = 0; i <= n; i++){
  console.log("Valor de i: ", i);
  }
 
-//Conte de 1 a 100 usando FOR, mas mostre ao usuário
+// 2. Conte de 1 a 100 usando FOR, mas mostre ao usuário
 //apenas os pares.
 let num = 100
 for (let i = 0; i <= num; i++){ 
@@ -14,20 +14,18 @@ for (let i = 0; i <= num; i++){
     } 
 }
 
-//Leia 5 salários e informe a média;
-qtdeSalarios = 5
-totalMedia = 0
-for (i = 0; i < qtdeSalarios; i++){
-    let pessoa1 = Math.random() * 3000
-    media += pessoa1
-    console.log("Salários [",
-            pessoa1.toFixed(2),
-            "], média: [",
-            media.toFixed(2),"]"
-            ) 
+// 3. Leia 5 salários e informe a média;
+totalSalario = 0
+n = 5
+for (i = 0; i < n; i++){
+    let salario = Math.random()*3000
+    totalSalario += salario
+    console.log("I:", i+1, "salário: ", salario.toFixed(2));
 }
-totalMedia = totalMedia / qtdeSalarios
-console.log("Média de salários", totalMedia.toFixed(2));
+media = totalSalario / n
+console.log("Média de salários: ", media.toFixed(2));
 
+// 4. Leia um número maior que 10.000 e divida ele 5 vezes.
+//Mostre ao usuário o resultado da divisão.
 
-
+// 5. Leia 10 nomes e mostre ao usuário a quantidade de letras.
