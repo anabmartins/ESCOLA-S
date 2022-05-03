@@ -1,7 +1,7 @@
+//Estrutura de Repetição For:
  let n = 10
-
-for (i = 0; i < n; i++){
-console.log("i: ", i+1);
+for (let i = 0; i < n; i++){
+console.log("Valor de i: ", i);
 }
 
  for (i=n; i>0; i--){
@@ -29,6 +29,7 @@ fat *= i
 console.log(fat);
 
 //cálculo média
+//mostrando 3 notas geradas aleatoriamente de 3 alunos.
 qtdeAlunos = 3
 totalMedia = 0
 for (i = 0; i < qtdeAlunos; i++){
