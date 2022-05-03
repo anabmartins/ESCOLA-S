@@ -36,6 +36,14 @@ for (i = 0; i < qtdeAlunos; i++){
     let nota2 = Math.random() * 10
     let nota3 = Math.random() * 10
     let media = (nota1 + nota2 + nota3) / 3
+    totalMedia += media
+    console.log("Notas [",
+            nota1.toFixed(2),
+            nota2.toFixed(2),
+            nota3.toFixed(2),
+            "], média: [",
+            media.toFixed(2),"]"
+            ) 
 }
-
-console.log(media);
+totalMedia = totalMedia / qtdeAlunos
+console.log("Média de notas", totalMedia.toFixed(2));
