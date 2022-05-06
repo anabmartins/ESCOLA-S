@@ -35,6 +35,7 @@ numero /= 2
 }
 
 // 5. Leia 10 nomes e mostre ao usuário a quantidade de letras.
-let nomes = ["Jõao","Paula","Cristina","Júlia","Laura","Emilly","Caio","Bianca","Wagner","Luana"] 
-for (let i = 0; i <= nomes; i++){ 
+let nomes = ["Jõao","Paula","Cristina","Júlia","Laura","Emilly","Caio","Bianca","Wagner","Luana"];
+for(let i = 0; i < 10; i++){
+    console.log(`${nomes[i]}, ${nomes[i].length}`)
 }
