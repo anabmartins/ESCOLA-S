@@ -22,3 +22,30 @@ for (let i = 0; i < n; i++){
 }
 
 console.log(numeros);
+
+// Dobrar valor em uma array
+let numeros = []
+
+let n = 3
+for (let i = 0; i < n; i++){
+    exponenciacao = 2**(n-i)
+    numeros.push(exponenciacao);
+}
+
+console.log("Vetor Original", numeros)
+for(let i = 0; i < n; i++){
+    numeros[i] *= 2
+}
+
+console.log("Vetor Dobrado", numeros);
+
+//gerar matriz
+matriz = []
+for (let i = 0; i < 3; i++){
+    x = Math.floor(Math.random()*10)
+    y = Math.floor(Math.random()*10)
+    z = Math.floor(Math.random()*10)
+    // console.log("Pontos: ", x, y, z)
+    matriz.push([x, y, z])
+    console.log(matriz)
+}
