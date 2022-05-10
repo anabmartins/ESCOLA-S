@@ -50,6 +50,10 @@ for (let i = 0; i < 3; i++){
     // console.log(matriz);
 }
 
-console.log("|", matriz[0][0], matriz[0][1], matriz[0][2] ,"|");
-console.log("|", matriz[1][0], matriz[1][1], matriz[1][2] ,"|");
-console.log("|", matriz[2][0], matriz[2][1], matriz[2][2] ,"|");
+// console.log("|", matriz[0][0], matriz[0][1], matriz[0][2] ,"|");
+// console.log("|", matriz[1][0], matriz[1][1], matriz[1][2] ,"|");
+// console.log("|", matriz[2][0], matriz[2][1], matriz[2][2] ,"|");
+
+for (let i = 0; i < 3; i++){
+        console.log("|",matriz[i][0],matriz[i][1],matriz[i][2],"|");
+}
