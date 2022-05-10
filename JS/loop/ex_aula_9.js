@@ -1,5 +1,6 @@
 //1. array com 5 nomes
 let nomes = ["Jõao","Paula","Cristina","Júlia","Laura"];
+console.log(nomes)
 
 //2. funcionários com salários
 let funcionarios_salarios = [1.024, 1.889, 3.500, 2.350, 4.765, 1.300, 3.423, 2.454]
