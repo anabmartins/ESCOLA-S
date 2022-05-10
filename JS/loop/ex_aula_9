@@ -1,0 +1,7 @@
+//1.
+let nomes = ["Jõao","Paula","Cristina","Júlia","Laura"];
+//2.
+let salarios = [1024.71, 1889.99 ]
+
+//4.
+isFinite = [verdadeiro, verdadeiro, falso]
