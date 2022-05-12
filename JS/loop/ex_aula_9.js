@@ -3,7 +3,7 @@ let nomes = ["Jõao","Paula","Cristina","Júlia","Laura"];
 console.log(nomes)
 
 //2. funcionários com salários
-let funcionarios_salarios = [1.024, 1.889, 3.500, 2.350, 4.765, 1.300, 3.423, 2.454]
+let funcionarios_salarios = ["Laura": 2.024, "Júlia": 1.889, "Jõao": 3.500, "Cristina": 2.350, "Jorge": 4.765, 1.300, 3.423, 2.454]
 
 //3. array de valores booleanos
 isFinite = [verdadeiro, verdadeiro, falso]
