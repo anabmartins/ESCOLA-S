@@ -4,16 +4,9 @@ console.log(nomes)
 
 //2. 8 funcionários com salários
 let s = []
-for (let i = 0; i < 8; i++){
-    a = Math.floor(Math.random()*10)
-    b = Math.floor(Math.random()*10)
-    c = Math.floor(Math.random()*10)
-    d = Math.floor(Math.random()*10)
-    e = Math.floor(Math.random()*10)
-    f = Math.floor(Math.random()*10)
-    g = Math.floor(Math.random()*10)
-    h = Math.floor(Math.random()*10)
-s.push([a, b, c, d, e, f, g, h])
+for (let i = 0; i <= 2; i++){
+    a = Math.floor(Math.random()*(1000,3000))
+s.push(a)
 console.log(s);
 }
 
