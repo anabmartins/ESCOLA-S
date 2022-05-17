@@ -20,8 +20,8 @@ for (let i = 0; i < n; i++){
     desconto = (valor / 100) * 5
     console.log(frutas, valor)
 }
-//6. Crie uma Matriz de ordem 3 e insira números aleatórios de 0 a 9. Em seguida multiplique por 2 os
-//valores da diagonal principal;
+/*6. Matriz de ordem 3 e insira números aleatórios de 0 a 9. Em seguida multiplique por 2 os
+valores da diagonal principal;*/
 matriz = []
 for (let i = 0; i < 3; i++){
     x = Math.floor(Math.random()*9)
@@ -34,3 +34,16 @@ for (let i = 0; i < 3; i++){
     matriz[i][2][2]*=2
     console.log("|",matriz[i][0],matriz[i][1],matriz[i][2],"|");
 }
+/* 7. Crie uma matriz de ordem 2 e calcule o determinante. A cada execução do script os valores da matriz
+devem ser gerados aleatoriamente. */
+
+    matriz = []
+    for (let i = 0; i < 2; i++){
+        a = Math.floor(Math.random()*10)
+        b = Math.floor(Math.random()*10)
+        matriz.push([a, b])
+        console.log("|",matriz[i][0],matriz[i][1]);
+        var det = matriz[i][0][0]
+        console.log(det);
+        
+    }
