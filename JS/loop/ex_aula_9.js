@@ -2,8 +2,20 @@
 let nomes = ["Jõao","Paula","Cristina","Júlia","Laura"];
 console.log(nomes)
 
-//2. funcionários com salários
-let funcionarios_salarios = [2.024, 1.889, 3.500, 2.350, 4.765, 1.300, 3.423, 2.454]
+//2. 8 funcionários com salários
+let s = []
+for (let i = 0; i < 8; i++){
+    a = Math.floor(Math.random()*10)
+    b = Math.floor(Math.random()*10)
+    c = Math.floor(Math.random()*10)
+    d = Math.floor(Math.random()*10)
+    e = Math.floor(Math.random()*10)
+    f = Math.floor(Math.random()*10)
+    g = Math.floor(Math.random()*10)
+    h = Math.floor(Math.random()*10)
+s.push([a, b, c, d, e, f, g, h])
+console.log(s);
+}
 
 //3. array de valores booleanos
 isFinite = [verdadeiro, verdadeiro, falso]
@@ -37,13 +49,10 @@ for (let i = 0; i < 3; i++){
 /* 7. Crie uma matriz de ordem 2 e calcule o determinante. A cada execução do script os valores da matriz
 devem ser gerados aleatoriamente. */
 
-    matriz = []
-    for (let i = 0; i < 2; i++){
-        a = Math.floor(Math.random()*10)
-        b = Math.floor(Math.random()*10)
-        matriz.push([a, b])
-        console.log("|",matriz[i][0],matriz[i][1]);
-        var det = matriz[i][0][0]
-        console.log(det);
-        
-    }
+matriz = []
+for (let i = 0; i < 2; i++){
+    a = Math.floor(Math.random()*10)
+    b = Math.floor(Math.random()*10)
+    matriz.push([a, b])
+    console.log("|",matriz[i][0],matriz[i][1],"|");
+}
