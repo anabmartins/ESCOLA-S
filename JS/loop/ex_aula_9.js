@@ -22,3 +22,16 @@ for (let i = 0; i < n; i++){
 }
 //6. Crie uma Matriz de ordem 3 e insira números aleatórios de 0 a 9. Em seguida multiplique por 2 os
 //valores da diagonal principal;
+matriz = []
+for (let i = 0; i < 3; i++){
+    x = Math.floor(Math.random()*9)
+    y = Math.floor(Math.random()*9)
+    z = Math.floor(Math.random()*9)
+    matriz.push([x, y, z])
+}
+for (let i = 0; i < 3; i++){
+        matriz[i][0][0]*=2
+        matriz[i][1][1]*=2
+        matriz[i][2][2]*=2
+        console.log("|",matriz[i][0],matriz[i][1],matriz[i][2],"|");
+}
