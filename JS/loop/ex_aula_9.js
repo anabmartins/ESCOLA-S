@@ -28,16 +28,22 @@ for (let i = 0; i < n; i++){
 /*6. Matriz de ordem 3 e insira números aleatórios de 0 a 9. Em seguida multiplique por 2 os
 valores da diagonal principal;*/
 matriz = []
-for (let i = 0; i < 3; i++){
-    x = Math.floor(Math.random()*9)
-    y = Math.floor(Math.random()*9)
-    z = Math.floor(Math.random()*9)
+console.log('Original');
+for (let i = 0; i < 3; i++) {
+    x = Math.floor(Math.random() * 9)
+    y = Math.floor(Math.random() * 9)
+    z = Math.floor(Math.random() * 9)
+    console.log(x, y, z);
     matriz.push([x, y, z])
-    console.log("|",matriz[i][0],matriz[i][1],matriz[i][2],"|");
-    matriz[i][0][0]*=2
-    matriz[i][1][1]*=2
-    matriz[i][2][2]*=2
-    console.log("|",matriz[i][0],matriz[i][1],matriz[i][2],"|");
+}
+console.log('Diagonal principal dobrada')
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        if (i == j) {
+            matriz[i][j] *= 2
+        }
+    }
+    console.log("|", matriz[i][0], matriz[i][1], matriz[i][2], "|");
 }
 /* 7. Crie uma matriz de ordem 2 e calcule o determinante. A cada execução do script os valores da matriz
 devem ser gerados aleatoriamente. */
