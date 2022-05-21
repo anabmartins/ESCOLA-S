@@ -49,9 +49,14 @@ for (let i = 0; i < 3; i++) {
 devem ser gerados aleatoriamente. */
 
 matriz = []
+console.log('Matriz');
 for (let i = 0; i < 2; i++){
     a = Math.floor(Math.random()*10)
     b = Math.floor(Math.random()*10)
+    console.log(a, b);
     matriz.push([a, b])
+}
+console.log('Determinante')
+for (let i = 0; i < 2; i++) {
     console.log("|",matriz[i][0],matriz[i][1],"|");
 }
