@@ -4,10 +4,13 @@ console.log(nomes)
 
 //2. 8 funcionários com salários
 let s = []
-for (let i = 0; i <= 2; i++){
-    a = Math.floor(Math.random()*(1000,3000))
-s.push(a)
-console.log(s);
+let funcionarios = ["Jõao","Paula","Cristina","Júlia","Laura"]
+funcionarios.push('Eliana', 'Bryan', 'Lucas', 'Arthur')
+
+for (let i = 0; i <= 8; i++){
+    sal = Math.floor(Math.random() * 3000) + 1000
+s.push(sal)
+console.log(funcionarios[i] + ' ganha R$' + s[i]);
 }
 
 //3. array de valores booleanos
