@@ -14,7 +14,14 @@ console.log(funcionarios[i] + ' ganha R$' + s[i]);
 }
 
 //3. array de valores booleanos
-isFinite = [verdadeiro, verdadeiro, falso]
+num = []
+a = 4
+
+for(i=0; i<=a; i++){
+    valor = Math.floor(Math.random() * 10) + 1
+    num.push(valor)
+    console.log(`O número ${num[i]} é maior ou igual a 5? ${num[i] >= 5}`)
+}
 
 //4. array de salários valor da hora, total: 
 let salarios = [2.593, 1.301, 2.350, 4.765, 1.300]
