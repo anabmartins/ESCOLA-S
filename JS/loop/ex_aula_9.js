@@ -70,10 +70,9 @@ console.log('Matriz');
 for (let i = 0; i < 2; i++){
     a = Math.floor(Math.random()*10)
     b = Math.floor(Math.random()*10)
-    console.log(a, b);
     matriz.push([a, b])
-}
-console.log('Determinante')
-for (let i = 0; i < 2; i++) {
     console.log("|",matriz[i][0],matriz[i][1],"|");
 }
+
+det = matriz[0][0]*matriz[1][1]-matriz[0][1]*matriz[1][0]
+console.log(`Determinante: ${det}`);
