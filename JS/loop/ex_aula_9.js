@@ -24,7 +24,13 @@ for(i=0; i<=a; i++){
 }
 
 //4. array de salários valor da hora, total: 
-let salarios = [2.593, 1.301, 2.350, 4.765, 1.300]
+let sal = [2593, 1301, 2350, 4765, 1300]
+let hora = 40
+
+for(let i=0; i < 5; i++){
+    console.log(`O valor da hora pro salário R$${sal[i]} é de ${sal[i]/hora}`);
+}
+
 
 //5. array que em cada linha possua valor de um produto e ao lado possua o valor do produto com
 //desconto de 5%;
