@@ -34,13 +34,14 @@ for(let i=0; i < 5; i++){
 
 //5. array que em cada linha possua valor de um produto e ao lado possua o valor do produto com
 //desconto de 5%;
-let frutas = ['uva', 'maca', 'banana', 'abacaxi', 'melancia'] 
+let frutas = ['Uva', 'Maçã', 'Banana', 'Abacaxi', 'Melancia'] 
 n = 5
-for (let i = 0; i < n; i++){
-    valor = Math.floor(Math.random()*10)
-    desconto = (valor / 100) * 5
-    console.log(frutas, valor)
+for (let i = 0; i <= n; i++){
+    valor = Math.floor(Math.random()*15) + 5 
+    desconto = Number((valor / 100) * 5).toFixed(2)
+    console.log(`${frutas[i]}: R$${valor}, com 5% de desc.: R$${desconto}`)
 }
+
 /*6. Matriz de ordem 3 e insira números aleatórios de 0 a 9. Em seguida multiplique por 2 os
 valores da diagonal principal;*/
 matriz = []
