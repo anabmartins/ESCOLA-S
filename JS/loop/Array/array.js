@@ -1,8 +1,11 @@
- frutas = ['uva', 'maçã', 'pera', 'laranja', 'bergamota', 'mimosa']
+frutas = ['uva', 'maçã', 'pera', 'laranja', 'bergamota', 'mimosa']
 
+// mostra o comprimento (índices) da array
  for(let i = 0; i < frutas.length; i++){
      console.log(i);
  }
+
+// mostra os itens da array 
  for (let i = frutas.length - 1; i >= 0; i--){
      console.log(frutas[i]);
  }
@@ -56,4 +59,4 @@ for (let i = 0; i < 3; i++){
 
 for (let i = 0; i < 3; i++){
         console.log("|",matriz[i][0],matriz[i][1],matriz[i][2],"|");
-}
+}                                    
